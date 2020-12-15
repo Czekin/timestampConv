@@ -1,0 +1,27 @@
+{
+  "name": "timestamp-conv",
+  "version": "1.0.0",
+  "description": "Discord Timestamp Converter",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Czekin/timestampConv.git"
+  },
+  "keywords": [
+    "API",
+    "Discord",
+    "Timestamp",
+    "Converter",
+    "Discord",
+    "Bot"
+  ],
+  "author": "Czekin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Czekin/timestampConv/issues"
+  },
+  "homepage": "https://github.com/Czekin/timestampConv#readme"
+}
