@@ -93,11 +93,17 @@ Simple converter.
 // import module
 const Converter = require('timestamp-conv');
 
-// set date to: 1608076029
+// set date to: 1608076029 (time is in UTC)
 const Date = new Converter.date(1608076029);
 
 console.log(Date.getDay());
-// returns day of the month (16)
+// returns day of the month (15)
+
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour()}:${Date.getMinute}`);
+// returns: 15.12.2020, 11:47
+
+console.log(Date.formatDay);
+// returns: 15.12.2020
 ```
 #### `timestamp()` Class example
 ```js
@@ -109,6 +115,12 @@ const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
 
 console.log(Date.getDay());
 // returns day of the month (15)
+
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour()}:${Date.getMinute}`);
+// returns: 15.12.2020, 23:30
+
+console.log(Date.formatDay);
+// returns: 15.12.2020
 ```
 #### `discordTimestamp()` Class example
 ```js
@@ -120,15 +132,10 @@ const Date = new Converter.discordTimestamp('2020-07-03T14:28:13.955Z');
 
 console.log(Date.getDay());
 // returns day of the month (03)
-```
-#### `formatDay` property example
-```js
-// import module
-const Converter = require('timestamp-conv');
 
-// set date to: Tue, 15 Dec 2020 23:30:24 GMT
-const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour()}:${Date.getMinute}`);
+// returns: 03.07.2020, 14:28
 
 console.log(Date.formatDay);
-// returns: 15.12.2020
+// returns: 03.07.2020
 ```
