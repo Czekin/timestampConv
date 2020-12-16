@@ -7,5 +7,5 @@
 
 module.exports = {
     date: require('./modules/SimpleDate'),
-    timestamp: require('./modules/ConvertTimeStamp')
+    timestamp: require('./modules/ConvertTimestamp')
 }
