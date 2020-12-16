@@ -2,26 +2,26 @@
 Simple converter.
 
 ## Simple-Date: date
-• getDayOfWeek() Returns day of the week.
-• getDay() Returns day of the month.
-• getMonth() Returns month.
-• getYear() Returns year.
-• getHour() Returns hours.
-• getMinute() Returns minutes.
-• getSeconds() Returns seconds.
-• getMilliseconds() Returns miliseconds.
-• _getVariable Returns Date object.
+• `getDayOfWeek()` Returns day of the week.
+• `getDay()` Returns day of the month.
+• `getMonth()` Returns month.
+• `getYear()` Returns year.
+• `getHour()` Returns hours.
+• `getMinute()` Returns minutes.
+• `getSeconds()` Returns seconds.
+• `getMilliseconds()` Returns miliseconds.
+• `_getVariable` Returns Date object.
 
 ## Timestamp-Convert: timestamp
-• getTimestamp Returns timestamp.
-• getDayOfWeek() Returns day of the week.
-• getDay() Returns day of the month.
-• getMonth() Returns month.
-• getYear() Returns year.
-• getHour() Returns hours.
-• getMinute() Returns minutes.
-• getSeconds() Returns seconds.
-• getMilliseconds() Returns miliseconds.
+• `getTimestamp` Returns timestamp.
+• `getDayOfWeek()` Returns day of the week.
+• `getDay()` Returns day of the month.
+• `getMonth()` Returns month.
+• `getYear()` Returns year.
+• `getHour()` Returns hours.
+• `getMinute()` Returns minutes.
+• `getSeconds()` Returns seconds.
+• `getMilliseconds()` Returns miliseconds.
 
 ----
 
