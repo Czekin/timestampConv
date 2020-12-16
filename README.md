@@ -64,7 +64,7 @@ console.log(Date.getDay());
 const Converter = require('timestamp-conv');
 
 // set date to Tue, 15 Dec 2020 23:30:24 GMT
-const Date = new Converter.date('Tue, 15 Dec 2020 23:30:24 GMT');
+const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
 
 console.log(Date.getDay());
 // returns day of the month (15)
