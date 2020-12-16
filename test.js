@@ -7,3 +7,6 @@ console.log(date.getDayOfWeek(), date.getDay(), date.getMonth(), date.getYear(),
 
 console.log(timestamp.getDayOfWeek(), timestamp.getDay(), timestamp.getMonth(), timestamp.getYear(),
     timestamp.getHour(), timestamp.getMinute(), timestamp.getSeconds(), timestamp.getMilliseconds());
+
+console.log(date.formatDay, date.formatHour, date.formatSeconds);
+console.log(timestamp.formatDay, timestamp.formatHour, timestamp.formatSeconds);

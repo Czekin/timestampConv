@@ -52,5 +52,9 @@ module.exports = class ConvertTimeStamp {
 
             return milli;
         };
+
+        this.formatDay = `${this.getDay()}.${this.getMonth()}.${this.getYear()}`;
+        this.formatHour = `${this.getDay()}.${this.getMonth()}.${this.getYear()}, ${this.getHour()}:${this.getMinute()}`;
+        this.formatSeconds = `${this.getDay()}.${this.getMonth()}.${this.getYear()}, ${this.getHour()}:${this.getMinute()}:${this.getSeconds()}`;
     };
 };

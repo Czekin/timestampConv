@@ -21,14 +21,18 @@ Simple converter.
 
 • `getMilliseconds()` Returns miliseconds.
 
+• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+
+• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+
+• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
+
 • `_getVariable` Returns Date object.
 
 ---
 
 ## timestamp
 #### Timestamp-Convert | **`timestamp(String)`**
-• `getTimestamp` Returns timestamp.
-
 • `getDayOfWeek()` Returns day of the week.
 
 • `getDay()` Returns day of the month.
@@ -44,6 +48,14 @@ Simple converter.
 • `getSeconds()` Returns seconds.
 
 • `getMilliseconds()` Returns miliseconds.
+
+• `getTimestamp` Returns timestamp.
+
+• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+
+• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+
+• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
 
 ---
 
@@ -68,4 +80,15 @@ const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
 
 console.log(Date.getDay());
 // returns day of the month (15)
+```
+
+```js
+// import module
+const Converter = require('timestamp-conv');
+
+// set date to Tue, 15 Dec 2020 23:30:24 GMT
+const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
+
+console.log(Date.formatDay);
+// returns: 15.12.2020
 ```
