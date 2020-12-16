@@ -88,7 +88,7 @@ Simple converter.
 ---
 
 ## Examples:
-#### date() Class example
+#### `date()` Class example
 ```js
 // import module
 const Converter = require('timestamp-conv');
@@ -99,7 +99,7 @@ const Date = new Converter.date(1608076029);
 console.log(Date.getDay());
 // returns day of the month (16)
 ```
-#### timestamp() Class example
+#### `timestamp()` Class example
 ```js
 // import module
 const Converter = require('timestamp-conv');
@@ -110,7 +110,7 @@ const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
 console.log(Date.getDay());
 // returns day of the month (15)
 ```
-#### discordTimestamp() Class example
+#### `discordTimestamp()` Class example
 ```js
 // import module
 const Converter = require('timestamp-conv');
@@ -121,7 +121,7 @@ const Date = new Converter.discordTimestamp('2020-07-03T14:28:13.955Z');
 console.log(Date.getDay());
 // returns day of the month (03)
 ```
-#### formatDay property example
+#### `formatDay` property example
 ```js
 // import module
 const Converter = require('timestamp-conv');
