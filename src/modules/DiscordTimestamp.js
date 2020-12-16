@@ -5,7 +5,7 @@
  */
 
 module.exports = class DiscordTimestamp {
-    constructor(timestamp = '2020-07-03T14:28:13.955Z') {
+    constructor(timestamp) {
         timestamp = new Date(timestamp);
 
         this.getDay = () => {
