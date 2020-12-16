@@ -33,6 +33,7 @@ Simple converter.
 
 ## discordTimestamp
 #### Discord-Timestamp | **`discordTimestamp(String)`**
+#### Converter for time: ISO 8601
 • `getDayOfWeek()` Returns day of the week.
 
 • `getDay()` Returns day of the month.
