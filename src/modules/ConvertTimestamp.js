@@ -5,7 +5,10 @@
  */
 
 module.exports = class ConvertTimeStamp {
-    constructor(date = 'Tue, 15 Dec 2020 23:30:24 GMT') {
+    constructor(date = null) {
+        if (timestamp == null) {
+            throw new Error('Provided timestamp is invalid or value equals `NaN` or `undefined`.\nCheck provided value.');
+        }
         date = new Date(Date.parse(date));
 
         this.getTimestamp = date;

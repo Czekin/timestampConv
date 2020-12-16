@@ -5,7 +5,10 @@
  */
 
 module.exports = class DiscordTimestamp {
-    constructor(timestamp) {
+    constructor(timestamp = null) {
+        if (timestamp == null) {
+            throw new Error('Provided timestamp is invalid or value equals `NaN` or `undefined`.\nCheck provided value.');
+        }
         timestamp = new Date(timestamp);
 
         this.getDay = () => {

@@ -5,7 +5,10 @@
  */
 
 module.exports = class SimpleDate {
-    constructor(timestamp = 1608074687) {
+    constructor(timestamp) {
+        if (timestamp == null) {
+            throw new Error('Provided timestamp is invalid or value equals `NaN` or `undefined`.\nCheck provided value.');
+        }
         timestamp = new Date(timestamp * 1000);
 
         this.getDay = () => {
