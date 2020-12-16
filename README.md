@@ -4,7 +4,7 @@ Simple converter.
 ---
 
 ## date
-### date(number)
+**`date(number)`**
 #### Simple-Date
 • `getDayOfWeek()` Returns day of the week.
 
@@ -27,7 +27,7 @@ Simple converter.
 ---
 
 ## timestamp
-### timestamp(string)
+**`timestamp(string)`**
 #### Timestamp-Convert
 • `getTimestamp` Returns timestamp.
 
