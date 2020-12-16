@@ -3,7 +3,9 @@ Simple converter.
 
 ---
 
-## Simple-Date: date
+## date
+### date(number)
+#### Simple-Date
 • `getDayOfWeek()` Returns day of the week.
 
 • `getDay()` Returns day of the month.
@@ -24,7 +26,9 @@ Simple converter.
 
 ---
 
-## Timestamp-Convert: timestamp
+## timestamp
+### timestamp(string)
+#### Timestamp-Convert
 • `getTimestamp` Returns timestamp.
 
 • `getDayOfWeek()` Returns day of the week.
@@ -50,7 +54,7 @@ Simple converter.
 // import module
 const Converter = require('timestamp-conv');
 
-// set date
+// set date to 1608076029
 const Date = new Converter.date(1608076029);
 
 console.log(Date.getDay());
@@ -61,7 +65,7 @@ console.log(Date.getDay());
 // import module
 const Converter = require('timestamp-conv');
 
-// set date
+// set date to Tue, 15 Dec 2020 23:30:24 GMT
 const Date = new Converter.date('Tue, 15 Dec 2020 23:30:24 GMT');
 
 console.log(Date.getDay());
