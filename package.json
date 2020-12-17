@@ -1,6 +1,6 @@
 {
   "name": "timestamp-conv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Discord Timestamp Converter",
   "main": "src/index.js",
   "scripts": {

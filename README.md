@@ -6,7 +6,7 @@
 
 [![NPM](https://nodei.co/npm/timestamp-conv.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/timestamp-conv/)
 
-Sometimes for some reasons module `moment` not working properly with discord.js timestamps, so if you have some issues, this module is for you.
+Sometimes for some reasons module `moment` doesn't work properly with discord.js timestamps, so if you have some issues, this module is for you.
 
 ---
 
