@@ -1,6 +1,6 @@
 {
   "name": "timestamp-conv",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Discord Timestamp Converter",
   "main": "src/index.js",
   "scripts": {
@@ -18,9 +18,14 @@
     "timestamp",
     "bot",
     "time",
-    "timestamp",
+    "time-stamp",
+    "stamp",
     "node",
-    "util"
+    "util",
+    "date",
+    "format",
+    "formatting",
+    "pretty"
   ],
   "author": "Czekin",
   "license": "MIT",
