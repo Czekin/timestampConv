@@ -6,7 +6,7 @@
 
 module.exports = class ConvertTimeStamp {
     constructor(date = null) {
-        if (timestamp == null) {
+        if (date == null) {
             throw new Error('Provided timestamp is invalid or value equals `NaN` or `undefined`.\nCheck provided value.');
         }
         date = new Date(Date.parse(date));
