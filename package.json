@@ -1,12 +1,11 @@
 {
   "name": "timestamp-conv",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Discord Timestamp Converter",
   "main": "src/index.js",
   "scripts": {
     "test": "node test.js",
-    "publish": "npm publish",
-    "devTest": "nodemon test.js"
+    "devtest": "nodemon test.js"
   },
   "repository": {
     "type": "git",
@@ -34,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/Czekin/timestampConv/issues"
   },
-  "homepage": "https://github.com/Czekin/timestampConv#readme"
+  "homepage": "https://github.com/Czekin/timestampConv#readme",
+  "dependencies": {}
 }
