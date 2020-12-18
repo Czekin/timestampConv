@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/timestamp-conv)](https://www.npmjs.com/package/timestamp-conv)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Czekin/timestampConv)](https://github.com/Czekin/timestampConv)
 [![Travis](https://img.shields.io/travis/com/Czekin/timestampConv)](https://travis-ci.com/github/Czekin/timestampConv)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv?ref=badge_shield)
 
 [![NPM](https://nodei.co/npm/timestamp-conv.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/timestamp-conv/)
 
@@ -148,3 +149,7 @@ console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour
 console.log(Date.formatDay);
 // returns: 03.07.2020
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv?ref=badge_large)
