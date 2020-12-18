@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/timestamp-conv)](https://www.npmjs.com/package/timestamp-conv)
 [![npm](https://img.shields.io/npm/dt/timestamp-conv)](https://www.npmjs.com/package/timestamp-conv)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Czekin/timestampConv)](https://github.com/Czekin/timestampConv)
+[![Travis](https://img.shields.io/travis/com/Czekin/timestampConv)](https://travis-ci.com/github/Czekin/timestampConv)
 
 [![NPM](https://nodei.co/npm/timestamp-conv.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/timestamp-conv/)
 
