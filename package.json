@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/Czekin/timestampConv/issues"
   },
-  "homepage": "https://github.com/Czekin/timestampConv#readme"
+  "homepage": "https://github.com/Czekin/timestampConv#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
