@@ -1,7 +1,7 @@
 const Converter = require('./src/index');
 const date = new Converter.date(1608076029);
-const timestamp = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 GMT');
-const discordTimestamp = new Converter.discordTimestamp('2020-07-03T14:28:13.955Z');
+const timestamp = new Converter.timestamp('Tue, 14 Dec 2020 23:30:24 UTC');
+const discordTimestamp = new Converter.timestamp('2020-07-03T14:28:13.955Z');
 
 console.log(date.getDayOfWeek(), date.getDay(), date.getMonth(), date.getYear(),
     date.getHour(), date.getMinute(), date.getSeconds(), date.getMilliseconds());

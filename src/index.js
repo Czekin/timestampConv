@@ -6,6 +6,5 @@
 
 module.exports = {
     date: require('./modules/SimpleDate'),
-    timestamp: require('./modules/ConvertTimestamp'),
-    discordTimestamp: require('./modules/DiscordTimestamp')
+    timestamp: require('./modules/ConvertTimestamp')
 }
