@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Discord Timestamp Converter",
   "main": "src/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "test": "node test.js",
     "devtest": "nodemon test.js"
