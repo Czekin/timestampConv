@@ -30,13 +30,13 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 
 • `getSeconds()` Returns seconds.
 
-• `getMilliseconds()` Returns miliseconds.
+• `getMilliseconds()` Returns milliseconds.
 
-• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+• `formatDay` Returns formatted human time in: `DD.MM.YYYY`.
 
-• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+• `formatHour` Returns formatted human time in: `DD.MM.YYYY, hh:mm`.
 
-• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
+• `formatSeconds` Returns formatted human time in: `DD.MM.YYYY, hh:mm:ss`.
 
 ---
 
@@ -58,15 +58,15 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 
 • `getSeconds()` Returns seconds.
 
-• `getMilliseconds()` Returns miliseconds.
+• `getMilliseconds()` Returns milliseconds.
 
 • `getTimestamp` Returns timestamp.
 
-• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+• `formatDay` Returns formatted human time in: `DD.MM.YYYY`.
 
-• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+• `formatHour` Returns formatted human time in: `DD.MM.YYYY, hh:mm`.
 
-• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
+• `formatSeconds` Returns formatted human time in: `DD.MM.YYYY, hh:mm:ss`.
 
 ---
 
