@@ -14,7 +14,7 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 ---
 
 ## date
-#### Simple-Date | **`date(Number)`**
+#### Simple-Date | **`date(String | Number, {forceTimezone: Boolean, timezone: Number}?)`**
 #### Converts unix timestamp to human date.
 • `getDayOfWeek()` Returns day of the week.
 
@@ -30,18 +30,18 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 
 • `getSeconds()` Returns seconds.
 
-• `getMilliseconds()` Returns miliseconds.
+• `getMilliseconds()` Returns milliseconds.
 
-• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+• `formatDay` Returns formatted human time in: `DD.MM.YYYY`.
 
-• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+• `formatHour` Returns formatted human time in: `DD.MM.YYYY, hh:mm`.
 
-• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
+• `formatSeconds` Returns formatted human time in: `DD.MM.YYYY, hh:mm:ss`.
 
 ---
 
 ## timestamp
-#### Timestamp-Convert | **`timestamp(String)`**
+#### Timestamp-Convert | **`timestamp(Date | String, {forceTimezone: Boolean, timezone: Number}?)`**
 #### Converts timestamp to human date.
 #### This class can convert [DiscordJS](https://www.npmjs.com/package/discord.js) timestamps.
 • `getDayOfWeek()` Returns day of the week.
@@ -58,15 +58,15 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 
 • `getSeconds()` Returns seconds.
 
-• `getMilliseconds()` Returns miliseconds.
+• `getMilliseconds()` Returns milliseconds.
 
 • `getTimestamp` Returns timestamp.
 
-• `formatDay` Returns formated human time in: `DD.MM.YYYY`.
+• `formatDay` Returns formatted human time in: `DD.MM.YYYY`.
 
-• `formatHour` Returns formated human time in: `DD.MM.YYYY, hh:mm`.
+• `formatHour` Returns formatted human time in: `DD.MM.YYYY, hh:mm`.
 
-• `formatSeconds` Returns formated human time in: `DD.MM.YYYY, hh:mm:ss`.
+• `formatSeconds` Returns formatted human time in: `DD.MM.YYYY, hh:mm:ss`.
 
 ---
 
@@ -82,7 +82,7 @@ const Date = new Converter.date(1608076029);
 console.log(Date.getDay());
 // returns day of the month (in UTC 15)
 
-console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour()}:${Date.getMinute}`);
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear()}, ${Date.getHour()}:${Date.getMinute()}`);
 // returns: 15.12.2020, 11:47
 
 console.log(Date.formatDay);
@@ -99,11 +99,28 @@ const Date = new Converter.timestamp('Tue, 15 Dec 2020 23:30:24 UTC');
 console.log(Date.getDay());
 // returns day of the month (15)
 
-console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear}, ${Date.getHour()}:${Date.getMinute}`);
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear()}, ${Date.getHour()}:${Date.getMinute()}`);
 // returns: 15.12.2020, 23:30
 
 console.log(Date.formatDay);
 // returns: 15.12.2020
+```
+#### `timestamp()` example with forceTimezone
+```js
+// import module
+const Converter = require('timestamp-conv');
+
+// set date to: 2020-07-03T14:28:13.955Z and force timezone to UTC+1
+const Date = new Converter.timestamp('2020-07-03T14:28:13.955Z', {forceTimezone: true, timezone: 1});
+
+console.log(Date.getDay());
+// returns day of the month (03)
+
+console.log(`${Date.getDay()}.${Date.getMonth()}.${Date.getYear()}, ${Date.getHour()}:${Date.getMinute()}`);
+// returns: 03.07.2020, 15:28 (in UTC: 03.07.2020, 14:28)
+
+console.log(Date.formatDay);
+// returns: 03.07.2020
 ```
 #### `timestamp()` example with [DiscordJS](https://www.npmjs.com/package/discord.js)
 ```js
