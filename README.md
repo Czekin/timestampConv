@@ -32,6 +32,8 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 
 • `getMilliseconds()` Returns milliseconds.
 
+• `getDaysInMonth()` Returns days in the month.
+
 • `formatDay` Returns formatted human time in: `DD.MM.YYYY`.
 
 • `formatHour` Returns formatted human time in: `DD.MM.YYYY, hh:mm`.
@@ -59,6 +61,8 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 • `getSeconds()` Returns seconds.
 
 • `getMilliseconds()` Returns milliseconds.
+
+• `getDaysInMonth()` Returns days in the month.
 
 • `getTimestamp` Returns timestamp.
 

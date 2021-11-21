@@ -127,6 +127,14 @@ module.exports = class {
         };
 
         /**
+         * @method getDaysInMonth
+         * @returns {number} Days in month (1 to 31)
+         */
+        this.getDaysInMonth = () => {
+            return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+        };
+
+        /**
          * formatDay 
          * @returns {string} Format time: DD.MM.YYYY
          */
