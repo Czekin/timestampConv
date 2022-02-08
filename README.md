@@ -3,7 +3,6 @@
 [![npm](https://img.shields.io/npm/v/timestamp-conv)](https://www.npmjs.com/package/timestamp-conv)
 [![npm](https://img.shields.io/npm/dt/timestamp-conv)](https://www.npmjs.com/package/timestamp-conv)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Czekin/timestampConv)](https://github.com/Czekin/timestampConv)
-[![Travis](https://img.shields.io/travis/com/Czekin/timestampConv)](https://travis-ci.com/github/Czekin/timestampConv)
 [![GitHub](https://img.shields.io/github/license/Czekin/timestampConv?color=blue)](https://github.com/Czekin/timestampConv/blob/stable/LICENSE)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FCzekin%2FtimestampConv?ref=badge_shield)
 
