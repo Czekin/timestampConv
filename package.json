@@ -4,7 +4,7 @@
   "description": "Discord Timestamp Converter",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "node tests/test.ts",
     "devtest": "nodemon test.js"
   },
   "repository": {
