@@ -7,15 +7,35 @@ type ConvertOptions = {
     timezone: number;
 };
 
+/**
+ * @typedef {Object} SimpleDate
+ * 
+ * @property {number} getDay          - Day
+ * @property {number} getDayOfWeek    - Day of the Week
+ * @property {number} getMonth        - Month
+ * @property {number} getYear         - Year
+ * @property {number} getHour         - Hour
+ * @property {number} getMinute       - Minutes
+ * @property {number} getSeconds      - Seconds
+ * @property {number} getMilliseconds - Milliseconds
+ * @property {number} getDaysInMonth  - Days in month (1 to 31)
+ * @property {string} formatDay       - Format time: DD.MM.YYYY
+ * @property {string} formatHour      - Format time: DD.MM.YYYY, hh:mm
+ * @property {string} formatSeconds   - Format time: DD.MM.YYYY, hh:mm:ss
+ */
+
 declare class SimpleDate {
     /**
-     *
-     * @param {string|number} timestamp - Timestamp
+     * 
+     * @constructor
+     * @type {SimpleDate}
+     * 
+     * @param {number} timestamp - Timestamp
      * @param {object} [param1] - Convert Options
      * @param {boolean} param1.forceTimezone - Force Timezone
      * @param {number} param1.timezone - Add Hours to timezone
      */
-    constructor(timestamp: string | number, ConvertOptions?: ConvertOptions);
+    constructor(timestamp: number, ConvertOptions?: ConvertOptions);
 
     /**
      * @method getDay
@@ -88,7 +108,7 @@ declare class SimpleDate {
 
 /**
  * @typedef {Object} ConvertTimestamp
- *
+ * 
  * @property {number} getDay          - Day
  * @property {number} getDayOfWeek    - Day of the Week
  * @property {number} getMonth        - Month
@@ -97,6 +117,7 @@ declare class SimpleDate {
  * @property {number} getMinute       - Minutes
  * @property {number} getSeconds      - Seconds
  * @property {number} getMilliseconds - Milliseconds
+ * @property {number} getDaysInMonth  - Days in month (1 to 31)
  * @property {string} formatDay       - Format time: DD.MM.YYYY
  * @property {string} formatHour      - Format time: DD.MM.YYYY, hh:mm
  * @property {string} formatSeconds   - Format time: DD.MM.YYYY, hh:mm:ss
@@ -111,10 +132,10 @@ declare class ConvertTimestamp {
      * @constructor
      * @type {ConvertTimestamp}
      *
-     * @param {Date | string} date        - Date
-     * @param {object} [param1] - Convert Options
+     * @param {Date | string} date           - Date
+     * @param {object} [param1]              - Convert Options
      * @param {boolean} param1.forceTimezone - Force Timezone
-     * @param {number} param1.timezone - Add Hours to timezone
+     * @param {number} param1.timezone       - Add Hours to timezone
      */
     constructor(date: string | Date, ConvertOptions?: ConvertOptions);
 

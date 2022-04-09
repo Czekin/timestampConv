@@ -15,6 +15,7 @@
  * @property {number} getMinute       - Minutes
  * @property {number} getSeconds      - Seconds
  * @property {number} getMilliseconds - Milliseconds
+ * @property {number} getDaysInMonth  - Days in month (1 to 31)
  * @property {string} formatDay       - Format time: DD.MM.YYYY
  * @property {string} formatHour      - Format time: DD.MM.YYYY, hh:mm
  * @property {string} formatSeconds   - Format time: DD.MM.YYYY, hh:mm:ss
@@ -24,10 +25,10 @@ module.exports = class SimpleDate {
 
     /**
      * 
-     * @param {string|number} timestamp - Timestamp
-     * @param {object} [param1] - Convert Options
+     * @param {number} timestamp     - Timestamp
+     * @param {object} [param1]             - Convert Options
      * @param {boolean} param1.forceTimezone - Force Timezone
-     * @param {number} param1.timezone - Add Hours to timezone
+     * @param {number} param1.timezone       - Add Hours to timezone
      */
     constructor(timestamp = null, { forceTimezone, timezone } = { forceTimezone: false, timezone: 0 }) {
         if (timestamp == null) {
