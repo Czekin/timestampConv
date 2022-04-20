@@ -18,18 +18,18 @@ import Options from './types/interface.options';
  */
 
  export = class ConvertTimestamp {
-    getDay: () => string;
-    getDayOfWeek: () => number;
-    getMonth: () => string;
-    getYear: () => number;
-    getHour: () => string;
-    getMinute: () => string;
-    getSeconds: () => string;
-    getMilliseconds: () => string;
-    getDaysInMonth: () => number;
-    formatDay: string;
-    formatHour: string;
-    formatSeconds: string;
+    public readonly getDay: () => string;
+    public readonly getDayOfWeek: () => number;
+    public readonly getMonth: () => string;
+    public readonly getYear: () => number;
+    public readonly getHour: () => string;
+    public readonly getMinute: () => string;
+    public readonly getSeconds: () => string;
+    public readonly getMilliseconds: () => string;
+    public readonly getDaysInMonth: () => number;
+    public readonly formatDay: string;
+    public readonly formatHour: string;
+    public readonly formatSeconds: string;
 
     constructor(date: any, options?: Options) {
         if (!options) options = {};
