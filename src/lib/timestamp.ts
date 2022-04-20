@@ -1,50 +1,55 @@
-/**
- * @author Czekin (https://github.com/Czekin)
- * @name Simple-Date
- * @description Converts timestamp(e.g. 1608074687) to simple date.
- */
+import Options from './types/interface.options';
 
 /**
- * @typedef {Object} SimpleDate
+ * @typedef {Object} ConvertTimestamp
  * 
- * @property {number} getDay          - Day
+ * @property {string} getDay          - Day
  * @property {number} getDayOfWeek    - Day of the Week
- * @property {number} getMonth        - Month
+ * @property {string} getMonth        - Month
  * @property {number} getYear         - Year
- * @property {number} getHour         - Hour
- * @property {number} getMinute       - Minutes
- * @property {number} getSeconds      - Seconds
- * @property {number} getMilliseconds - Milliseconds
+ * @property {string} getHour         - Hour
+ * @property {string} getMinute       - Minutes
+ * @property {string} getSeconds      - Seconds
+ * @property {string} getMilliseconds - Milliseconds
  * @property {number} getDaysInMonth  - Days in month (1 to 31)
  * @property {string} formatDay       - Format time: DD.MM.YYYY
  * @property {string} formatHour      - Format time: DD.MM.YYYY, hh:mm
  * @property {string} formatSeconds   - Format time: DD.MM.YYYY, hh:mm:ss
  */
 
-module.exports = class SimpleDate {
+ export = class ConvertTimestamp {
+    getDay: () => string;
+    getDayOfWeek: () => number;
+    getMonth: () => string;
+    getYear: () => number;
+    getHour: () => string;
+    getMinute: () => string;
+    getSeconds: () => string;
+    getMilliseconds: () => string;
+    getDaysInMonth: () => number;
+    formatDay: string;
+    formatHour: string;
+    formatSeconds: string;
 
-    /**
-     * 
-     * @param {number} timestamp     - Timestamp
-     * @param {object} [param1]             - Convert Options
-     * @param {boolean} param1.forceTimezone - Force Timezone
-     * @param {number} param1.timezone       - Add Hours to timezone
-     */
-    constructor(timestamp = null, { forceTimezone, timezone } = { forceTimezone: false, timezone: 0 }) {
-        if (timestamp == null) {
+    constructor(date: any, options?: Options) {
+        if (!options) options = {};
+        options.forceTimezone ??= false;
+        options.timezone ??= 0;
+
+        if (date == undefined) {
             throw new Error('Provided timestamp is invalid or value equals `NaN` or `undefined`.\nCheck provided value.');
         }
-        timestamp = new Date(timestamp * 1000);
+        date = new Date(date);
 
         /**
          * @method getDay
-         * @returns {number} Day
+         * @returns {string} Day
          */
         this.getDay = () => {
-            let day = timestamp.getDate();
-            if (day < 10) day = '0' + day;
+            let day = date.getDate();
+            // if (day < 10) day = '0' + day;
 
-            return day;
+            return String(day).padStart(2, '0');
         };
 
         /**
@@ -52,18 +57,18 @@ module.exports = class SimpleDate {
          * @returns {number} Day of the Week
          */
         this.getDayOfWeek = () => {
-            return timestamp.getDay();
+            return date.getDay();
         };
 
         /**
          * @method getMonth
-         * @returns {number} Month
+         * @returns {string} Month
          */
         this.getMonth = () => {
-            let month = timestamp.getMonth() + 1;
-            if (month < 10) month = '0' + month;
+            let month = date.getMonth() + 1;
+            // if (month < 10) month = '0' + month;
 
-            return month;
+            return String(month).padStart(2, '0');
         };
 
         /**
@@ -71,55 +76,55 @@ module.exports = class SimpleDate {
          * @returns {number} Year
          */
         this.getYear = () => {
-            return timestamp.getFullYear();
+            return date.getFullYear();
         };
 
         /**
          * @method getHour
-         * @returns {number} Hour
+         * @returns {string} Hour
          */
         this.getHour = () => {
             let hours;
 
-            if (forceTimezone == true) hours = timestamp.getUTCHours() + timezone;
-            else hours = timestamp.getHours();
+            if (options?.forceTimezone == true) hours = date.getUTCHours() + options.timezone;
+            else hours = date.getHours();
 
-            if (hours < 10) hours = '0' + hours;
+            // if (hours < 10) hours = '0' + hours;
 
-            return hours;
+            return String(hours).padStart(2, '0');
         };
 
         /**
          * @method getMinute
-         * @returns {number} Minutes
+         * @returns {string} Minutes
          */
         this.getMinute = () => {
-            let minutes = timestamp.getMinutes();
-            if (minutes < 10) minutes = '0' + minutes;
+            let minutes = date.getMinutes();
+            // if (minutes < 10) minutes = '0' + minutes;
 
-            return minutes;
+            return String(minutes).padStart(2, '0');
         };
 
         /**
          * @method getSeconds
-         * @returns {number} Seconds
+         * @returns {string} Seconds
          */
         this.getSeconds = () => {
-            let sec = timestamp.getSeconds();
-            if (sec < 10) sec = '0' + sec;
+            let sec = date.getSeconds();
+            // if (sec < 10) sec = '0' + sec;
 
-            return sec;
+            return String(sec).padStart(2, '0');
         };
 
         /**
          * @method getMilliseconds
-         * @returns {number} Milliseconds
+         * @returns {string} Milliseconds
          */
         this.getMilliseconds = () => {
-            let milli = timestamp.getMilliseconds();
-            if (milli < 10) milli = '0' + milli;
+            let milli = date.getMilliseconds();
+            // if (milli < 10) milli = '0' + milli;
 
-            return milli;
+            return String(milli).padStart(2, '0');
         };
 
         /**
