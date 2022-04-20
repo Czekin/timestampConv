@@ -13,7 +13,7 @@ Sometimes for some reasons module [`moment`](npmjs.com/package/moment) doesn't w
 ---
 
 ## date
-#### Simple-Date | **`date(String | Number, {forceTimezone: Boolean, timezone: Number}?)`**
+#### Simple-Date | **`date(Number, {forceTimezone: Boolean, timezone: Number}?)`**
 #### Converts unix timestamp to human date.
 • `getDayOfWeek()` Returns day of the week.
 
